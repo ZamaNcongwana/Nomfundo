@@ -1,97 +1,264 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Sisterhood</title> 
-<meta name="description" content="Sisterhood Beautique in Hammarsdale offers professional hair services, beauty products and a luxury salon experience led by entrepreneur Nomfundo Miya."> 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> 
-<!--=============== FAVICON ===============-->
- <link rel="shortcut icon" href="Sisterhood-Beautiquee_htm_files/84.jpg" type="image/x-icon">
-<style> 
-body{ margin:0; font-family:'Poppins',sans-serif; background:#fff7fb; color:#333; scroll-behavior:smooth; } 
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-/* HERO */ 
-.hero{ height:90vh; background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9'); background-size:cover; background-position:center; display:flex; align-items:center; justify-content:center; text-align:center; color:white; } 
-.hero h1{font-size:42px;margin:0;
-}
- 
-.hero p{font-size:18px;
-} 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.btn{ background:#ff4da6; padding:14px 28px; border-radius:30px; color:white; text-decoration:none; display:inline-block; margin-top:15px; 
-}
+<title>Sisterhood Beautique</title>
 
-/* SECTION */ 
+<meta name="description" content="Sisterhood Beautique in Hammarsdale offers professional hair services, beauty products and a luxury salon experience led by entrepreneur Nomfundo Miya.">
 
-.section{ max-width:1100px; margin:auto; padding:50px 20px; 
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-h2{ color:#ff4da6; text-align:center; margin-bottom:30px; 
-}
-/* CARDS */ 
+<!-- Favicon -->
+<link rel="shortcut icon" href="Sisterhood-Beautiquee_htm_files/84.jpg" type="image/x-icon">
 
-.card{ background:white; padding:25px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin:15px; 
-} 
+<style>
 
-.grid{ display:flex; flex-wrap:wrap; justify-content:center; 
+/* ================= GLOBAL ================= */
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#fff7fb;
+color:#333;
+scroll-behavior:smooth;
+line-height:1.6;
 }
 
-/* GALLERY */ 
-.gallery img{ width:300px; border-radius:10px; margin:10px; 
-} 
+/* ================= SECTION ================= */
 
-/* REVIEW */ 
-.review{ background:#ffe6f2; 
+.section{
+max-width:1100px;
+margin:auto;
+padding:80px 25px;
 }
 
-/* WHATSAPP BUTTON */ 
-.whatsapp{ position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 18px; border-radius:50%; font-size:22px; text-decoration:none; 
+/* ================= HEADINGS ================= */
+
+h2{
+color:#ff4da6;
+text-align:center;
+margin-bottom:45px;
+font-weight:700;
+position:relative;
 }
 
-/* FOOTER */ 
-footer{ background:#111; color:white; text-align:center; padding:25px; 
+h2::after{
+content:'';
+width:60px;
+height:3px;
+background:#ff4da6;
+display:block;
+margin:10px auto 0;
+border-radius:5px;
 }
-</style> 
 
-</head> 
+/* ================= BUTTON ================= */
 
-<body> 
-<!-- Embedded booking begin --><div class="embedded-booking" data-url="https://sisterhoodbeautique.trafft.com" data-query="&t=s&uuid=919e0156-0a72-45f5-afb6-2feaef6404e2" data-lang="en" data-autoresize="0" data-showsidebar="1" data-showservices="0" style="min-width: 100%; height: 768px;"></div><script type="text/javascript" src="https://sisterhoodbeautique.trafft.com/embed.js" async></script><!-- Embedded booking end --> 
-<!-- HERO --><iframe width="100%" height="350" src="https://www.youtube.com/embed/hRr2UP8U1PE?si=nAnUyaQtBOU039ey" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>  
-</section> 
+.btn{
+background:#ff4da6;
+padding:15px 35px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+font-weight:500;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(255,77,166,0.4);
+}
 
-<!-- ABOUT --> 
-<section class="section"> 
-<h2>About Us</h2> 
-<div class="card"> <p> Nestled in the heart of Hammarsdale opposite Mpumalanga Stadium, <strong>Sisterhood Beautique</strong> is founded by passionate entrepreneur <strong>Nomfundo Miya</strong>. We empower women through exceptional hair services and premium beauty products. </p> </div> </section> 
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 15px 35px rgba(255,77,166,0.5);
+}
 
-<!-- SERVICES 
-<section class="section"> 
-<h2>Our Services</h2> 
-<div class="grid"> 
-<div class="card">Hair Styling</div> 
-<div class="card">Wig Installation</div> 
-<div class="card">Braiding</div> <div class="card">Hair Treatment</div> 
-<div class="card">Makeup Services</div> 
-</div> 
-</section>-->   
+/* ================= CARD ================= */
 
-<!-- BOOKING --> 
-<section id="booking" class="section"> 
-<h2>Book Your Appointment</h2> 
-<a class="btn" href="https://wa.me/+27614857782"> Book via WhatsApp </a> 
-</section> 
+.card{
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+margin:15px;
+transition:0.4s;
+}
 
-<!-- MAP  
-<section class="section"> 
-<h2>Find Us</h2> 
-<iframe src="https://www.google.com/maps?q=Mpumalanga+Stadium+Hammarsdale&output=embed" width="100%" height="300" style="border:0;"> </iframe> 
-</section>--> 
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 40px rgba(0,0,0,0.15);
+}
 
-<!-- WHATSAPP FLOAT --> 
-<a href="https://wa.me/+27614857782" class="whatsapp">💬</a> <footer> 
-    <p>© 2026 Sisterhood Beautique</p> 
-</footer> 
-</body> 
-</html> 
+/* ================= GRID ================= */
+
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+/* ================= VIDEO ================= */
+
+iframe{
+border:none;
+border-radius:18px;
+box-shadow:0 10px 35px rgba(0,0,0,0.2);
+margin-top:20px;
+}
+
+/* ================= REVIEW ================= */
+
+.review{
+background:#ffe6f2;
+border-radius:20px;
+}
+
+/* ================= BOOKING ================= */
+
+#booking{
+text-align:center;
+background:white;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,0.07);
+}
+
+/* ================= WHATSAPP FLOAT ================= */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:18px 20px;
+border-radius:50%;
+font-size:24px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+transition:0.3s;
+z-index:999;
+}
+
+.whatsapp:hover{
+transform:scale(1.1);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:35px;
+margin-top:50px;
+font-size:14px;
+letter-spacing:1px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.section{
+padding:60px 18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Embedded booking begin -->
+<div class="embedded-booking"
+data-url="https://sisterhoodbeautique.trafft.com"
+data-query="&t=s&uuid=919e0156-0a72-45f5-afb6-2feaef6404e2"
+data-lang="en"
+data-autoresize="0"
+data-showsidebar="1"
+data-showservices="0"
+style="min-width: 100%; height: 768px;">
+</div>
+
+<script type="text/javascript"
+src="https://sisterhoodbeautique.trafft.com/embed.js"
+async></script>
+<!-- Embedded booking end -->
+
+
+<!-- HERO VIDEO -->
+<iframe width="100%" height="350"
+src="https://www.youtube.com/embed/hRr2UP8U1PE?si=nAnUyaQtBOU039ey"
+title="YouTube video player"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
+
+
+<!-- ABOUT -->
+<section class="section">
+<h2>About Us</h2>
+
+<div class="card">
+<p>
+Nestled in the heart of Hammarsdale opposite Mpumalanga Stadium,
+<strong>Sisterhood Beautique</strong> is founded by passionate entrepreneur
+<strong>Nomfundo Miya</strong>.
+We empower women through exceptional hair services and premium beauty products.
+</p>
+</div>
+
+</section>
+
+
+<!-- SERVICES (Hidden exactly as you left it)
+<section class="section">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card">Hair Styling</div>
+<div class="card">Wig Installation</div>
+<div class="card">Braiding</div>
+<div class="card">Hair Treatment</div>
+<div class="card">Makeup Services</div>
+</div>
+</section>
+-->
+
+
+<!-- BOOKING -->
+<section id="booking" class="section">
+
+<h2>Book Your Appointment</h2>
+
+<a class="btn" href="https://wa.me/+27614857782">
+Book via WhatsApp
+</a>
+
+</section>
+
+
+<!-- MAP (Hidden exactly as you left it)
+<section class="section">
+<h2>Find Us</h2>
+<iframe src="https://www.google.com/maps?q=Mpumalanga+Stadium+Hammarsdale&output=embed"
+width="100%" height="300" style="border:0;"></iframe>
+</section>
+-->
+
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/+27614857782" class="whatsapp">💬</a>
+
+
+<footer>
+<p>© 2026 Sisterhood Beautique</p>
+</footer>
+
+</body>
+</html>
